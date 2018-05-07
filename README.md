@@ -8,7 +8,13 @@ class A
 	end
 end
 ```
-2. In a given test case, we would like to expect a method call on an instance of this class, e.g.:
+2. Include Expectable on this class, e.g.:
+
+```ruby
+A.include Expectable
+```
+
+3. In a given test case, we would like to expect a method call on an instance of this class, e.g.:
 
 ```ruby
 def test_a_calls_b
