@@ -4,13 +4,13 @@ The Expectable gem is used as follows:
 
 ```ruby
 class A
-	# Instance method - use include on your instance
-	def b
-	end
+  # Instance method - use include on your instance
+  def b
+  end
 
-	# Static method - use extend on your class
-	def self.b
-	end
+  # Static method - use extend on your class
+  def self.b
+  end
 end
 ```
 2. Include Expectable on this class, e.g.:
@@ -32,9 +32,9 @@ a.extend Expectable
 
 ```ruby
 def test_a_calls_b
-	a.expect(:b, 'my-return-value', ['my-required-input'])
-		puts a.b('my-required-input')
-	end
+  a.expect(:b, 'my-return-value', ['my-required-input'])
+    puts a.b('my-required-input')
+  end
 end
 
 test_a_calls_b
